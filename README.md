@@ -1,15 +1,12 @@
-# spring-microservices
-
-
 # Spring Cloud microservices
 
-Read the Spring Modules that comprise the Spring cloud
-
-[Spring Cloud](https://spring.io/projects/spring-cloud#:~:targetText=Spring%20Cloud%20provides%20tools%20for,distributed%20sessions%2C%20cluster%20state)
+Read the Spring Modules that comprise the
+**[Spring Cloud](https://spring.io/projects/spring-cloud#:~:targetText=Spring%20Cloud%20provides%20tools%20for,distributed%20sessions%2C%20cluster%20state)**
 
 Diagram demonstrating the major components of Spring microservices
+**[Architecture](https://spring.io/img/homepage/diagram-distributed-systems.svg)**
 
-[Architecture](https://spring.io/img/homepage/diagram-distributed-systems.svg)
+[test](#3. Conversion microservice)
 
 # Ports used in the project
 
