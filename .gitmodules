@@ -1,0 +1,21 @@
+[submodule "limits-service"]
+	path = limits-service
+	url = https://github.com/spring-microservices-learning/limits-service.git
+[submodule "spring-cloud-config-server"]
+	path = spring-cloud-config-server
+	url = https://github.com/spring-microservices-learning/spring-cloud-config-server.git
+[submodule "currency-exchange"]
+	path = currency-exchange
+	url = https://github.com/spring-microservices-learning/currency-exchange.git
+[submodule "currency-converter"]
+	path = currency-converter
+	url = https://github.com/spring-microservices-learning/currency-converter.git
+[submodule "netflix-zuul-api-gateway-server"]
+	path = netflix-zuul-api-gateway-server
+	url = https://github.com/spring-microservices-learning/netflix-zuul-api-gateway-server.git
+[submodule "netflix-eureka-naming-server"]
+	path = netflix-eureka-naming-server
+	url = https://github.com/spring-microservices-learning/netflix-eureka-naming-server.git
+[submodule "config-repo"]
+	path = config-repo
+	url = https://github.com/spring-microservices-learning/config-repo.git
