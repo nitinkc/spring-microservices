@@ -6,7 +6,7 @@ Read the Spring Modules that comprise the
 Diagram demonstrating the major components of Spring microservices
 **[Architecture](https://spring.io/img/homepage/diagram-distributed-systems.svg)**
 
-[test](#3. Conversion microservice)
+[test](###3. Conversion microservice)
 
 # Ports used in the project
 
@@ -21,32 +21,6 @@ Diagram demonstrating the major components of Spring microservices
 |Test Config microservice | 8080, 8081, …|
 |Spring Cloud Config Server | 8888|
 
-### 1. Test Config Microservice
-Test Project to have config values read from Spring Cloud Config Server
-
-Group : com.microservices.learning.test
-
-Artifact Id: test-config-microservice
-
-Dependencies :
-
-	• Web
-	• DevTools
-	• Actuator
-	• Config Client (to talk to the Spring cloud Config Server)
-
-### 2. Spring Cloud Config server
-
-**Test Config Microservice** : Maintain a single project consisting profiles (stored in a separate Git Hub Repository). The project will be the Server and other projects will have the spring cloud config Client as the dependency.
-
-Group : com.microservices.learning.configServer
-
-Artifact : spring-cloud-config-server
-
-Dependencies :
-
-  	• Spring Boot DevTools
-  	• Config Server
 
 ###  3. Conversion microservice
 Simple Spring Project that reads values from a DB and returns a conversion Factor for the consuming microservice
