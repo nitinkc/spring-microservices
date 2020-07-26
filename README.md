@@ -161,13 +161,13 @@ RABBIT_URI=amqp://localhost java -jar zipkin.jar
     <artifactId>spring-cloud-starter-sleuth</artifactId>
 </dependency>
 <!-- Zipkin Distributed Tracing Server added -->
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-zipkin</artifactId>
-    </dependency>
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-zipkin</artifactId>
+</dependency>
 <!-- Rabbit Messaging Support added -->
-    <dependency>
-        <groupId>org.springframework.amqp</groupId>
-        <artifactId>spring-rabbit</artifactId>
-    </dependency>
+<dependency>
+	<groupId>org.springframework.amqp</groupId>
+	<artifactId>spring-rabbit</artifactId>
+</dependency>
 ```
