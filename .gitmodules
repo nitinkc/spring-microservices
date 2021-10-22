@@ -1,6 +1,6 @@
-[submodule "limits-service"]
-	path = limits-service
-	url = https://github.com/spring-microservices-learning/limits-service.git
+[submodule "config-property-microservice"]
+	path = config-property-microservice
+	url = https://github.com/spring-microservices-learning/config-property-microservice.git
 [submodule "spring-cloud-config-server"]
 	path = spring-cloud-config-server
 	url = https://github.com/spring-microservices-learning/spring-cloud-config-server.git
