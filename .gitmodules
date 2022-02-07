@@ -8,8 +8,8 @@
 	path = currency-exchange
 	url = https://github.com/spring-microservices-learning/currency-exchange.git
 [submodule "currency-converter"]
-	path = currency-converter
-	url = https://github.com/spring-microservices-learning/currency-converter.git
+	path = query-service
+	url = https://github.com/spring-microservices-learning/query-service.git
 [submodule "netflix-zuul-api-gateway-server"]
 	path = netflix-zuul-api-gateway-server
 	url = https://github.com/spring-microservices-learning/netflix-zuul-api-gateway-server.git
