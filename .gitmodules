@@ -4,12 +4,6 @@
 [submodule "spring-cloud-config-server"]
 	path = spring-cloud-config-server
 	url = https://github.com/spring-microservices-learning/spring-cloud-config-server.git
-[submodule "currency-exchange"]
-	path = currency-exchange
-	url = https://github.com/spring-microservices-learning/currency-exchange.git
-[submodule "currency-converter"]
-	path = query-service
-	url = https://github.com/spring-microservices-learning/query-service.git
 [submodule "netflix-zuul-api-gateway-server"]
 	path = netflix-zuul-api-gateway-server
 	url = https://github.com/spring-microservices-learning/netflix-zuul-api-gateway-server.git
