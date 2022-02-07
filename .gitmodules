@@ -25,3 +25,6 @@
 [submodule "query-service"]
 	path = query-service
 	url = https://github.com/nitinkc/query-service.git
+[submodule "command-service"]
+	path = command-service
+	url = https://github.com/nitinkc/command-service.git
