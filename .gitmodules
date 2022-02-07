@@ -3,16 +3,16 @@
 	url = https://github.com/nitinkc/config-property-microservice.git
 [submodule "spring-cloud-config-server"]
 	path = spring-cloud-config-server
-	url = https://github.com/spring-microservices-learning/spring-cloud-config-server.git
+	url = https://github.com/nitinkc/spring-cloud-config-server.git
 [submodule "netflix-zuul-api-gateway-server"]
 	path = netflix-zuul-api-gateway-server
-	url = https://github.com/spring-microservices-learning/netflix-zuul-api-gateway-server.git
+	url = https://github.com/nitinkc/netflix-zuul-api-gateway-server.git
 [submodule "netflix-eureka-naming-server"]
 	path = netflix-eureka-naming-server
-	url = https://github.com/spring-microservices-learning/netflix-eureka-naming-server.git
+	url = https://github.com/nitinkc/netflix-eureka-naming-server.git
 [submodule "config-repo"]
 	path = config-repo
-	url = https://github.com/spring-microservices-learning/config-repo.git
+	url = https://github.com/nitinkc/config-repo.git
 [submodule "Spring-boot-admin"]
 	path = Spring-boot-admin
 	url = https://github.com/nitinkc/Spring-boot-admin.git
