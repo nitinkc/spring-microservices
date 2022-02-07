@@ -1,5 +1,13 @@
 # Spring Cloud microservices
 
+Clone all Projects together. Remember to switch to main branch instead of being into detached head.
+```sh
+git clone https://github.com/nitinkc/spring-microservices.git   
+cd spring-microservices
+git submodule init
+git submodule update 
+```
+
 Read the Spring Modules that comprise the
 **[Spring Cloud](https://spring.io/projects/spring-cloud#:~:targetText=Spring%20Cloud%20provides%20tools%20for,distributed%20sessions%2C%20cluster%20state)**
 
@@ -22,7 +30,7 @@ Diagram demonstrating the major components of Spring microservices
 |Spring Cloud Config Server | 8888|
 
 
-###  3. Conversion microservice
+### 3. Conversion microservice
 Simple Spring Project that reads values from a DB and returns a conversion Factor for the consuming microservice
 
 Group : com.microservices.learning.conversion
@@ -40,7 +48,7 @@ Dependencies :
 
 H2 DB Web Client URL : http://localhost:8000/h2-console/
 
-###  4. Calculation micro service
+### 4. Calculation micro service
 Consumes Conversion micro service and performs x*value returned by conversion micro service operation to
 
 Following technologies used :
@@ -73,7 +81,7 @@ Dependencies :
 ##### VM Argument to run multiple instances of a microservice
 		-Dserver.port=8001
 
-###  5. Eureka Naming Server
+### 5. Eureka Naming Server
 
 Group : com.microservices.learning.eureka
 
@@ -89,7 +97,7 @@ Dependencies :
 Access Eureka Server UI at : <http://localhost:8761/>
 
 
-###  6. Zuul API Gateway
+### 6. Zuul API Gateway
 
 Group : com.microservices.learning.zuul
 
