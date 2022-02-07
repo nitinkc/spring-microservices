@@ -22,3 +22,6 @@
 [submodule "Spring-boot-admin"]
 	path = Spring-boot-admin
 	url = https://github.com/nitinkc/Spring-boot-admin.git
+[submodule "query-service"]
+	path = query-service
+	url = https://github.com/nitinkc/query-service.git
