@@ -2,8 +2,9 @@
 
 Clone all Projects together. Remember to switch to main branch instead of being into detached head.
 ```sh
-git clone https://github.com/nitinkc/spring-microservices.git   
+git clone --recurse-submodules -j8 https://github.com/nitinkc/spring-microservices.git
 cd spring-microservices
+
 git submodule init
 git submodule update 
 ```
