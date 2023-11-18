@@ -19,16 +19,16 @@ Diagram demonstrating the major components of Spring microservices
 
 # Ports used in the project
 
-|Application | Port |
--------------|-------
-|Conversion microservice |8000, 8001, 8002, ..|
-|Calculation microservice |8100, 8101, 8102, …|
-|Netflix Eureka Naming Server | 8761|
-|Netflix Zuul API Gateway Server | 8765|
-|Zipkin Distributed Tracing Server |9411|
-|||
-|Test Config microservice | 8080, 8081, …|
-|Spring Cloud Config Server | 8888|
+| Application                        | Port                 |
+|:-----------------------------------|:---------------------|
+| Conversion microservice            | 8000, 8001, 8002, .. |
+| Calculation microservice           | 8100, 8101, 8102, …  |
+| Netflix Eureka Naming Server       | 8761                 |
+| Netflix Zuul API Gateway Server    | 8765                 |
+| Zipkin Distributed Tracing Server  | 9411                 |
+|                                    |                      |
+| Test Config microservice           | 8080, 8081, …        |
+| Spring Cloud Config Server         | 8888                 |
 
 
 ### 3. Conversion microservice
@@ -134,13 +134,23 @@ RABBIT_URI=amqp://localhost java -jar zipkin.jar
 
 <http://localhost:9411/zipkin/>
 
-## Sequence of starting the servers
+# Sequence of starting the servers
 1. Eureka Naming Server
+   * Run the server on [http://localhost:8761/](http://localhost:8761/)
 2. Zuul API Gateway
-3. Conversion Service
-4. Calculation service
+3. Command Service
+   * Run 3 instances with run/debug configurations with VM Options set for ports 8001, 8002 `-Dserver.port=8001`
+4. Query Service with H2 inMemory DB
+   * Run 3 instances with run/debug configurations with VM Options set for ports 8101, 8102 `-Dserver.port=8101`
 5. Rabbit MQ
+   * On Mac [Install via brew](https://www.rabbitmq.com/install-homebrew.html)
+   *  Run on foreground : CONF_ENV_FILE="/usr/local/etc/rabbitmq/rabbitmq-env.conf" /usr/local/opt/rabbitmq/sbin/rabbitmq-server
+   * access the portal - [http://localhost:15672/](http://localhost:15672/) with guest/guest
 6. Zipkin tracing server
+   * docker run -d -p 9411:9411 openzipkin/zipkin
+   * [http://localhost:9411/zipkin/](http://localhost:9411/zipkin/)
+
+
 ### Maven Dependencies
 
 ```sh
